@@ -1,25 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 body{ 
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
     background-color: whitesmoke;
-    width: 100%;
 }
 
 li {
-    list-style: none;;
+    list-style: none;
 }
 
 a {
     text-decoration: none;
     color: black;
 }
+
 header {
     display: flex;
-    min-height: 70px;
+    min-height: 3em;
     background-color: coral;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 1rem;
+    width: 100%;
 }
 
 .logo {
@@ -28,13 +34,13 @@ header {
 }
 
 .logo img {
-    height: 50px;
-    margin-right: 10px;
+    height: 3rem;
+    margin-right: 1em;
 }
 
 nav a {
     font-weight: 600;
-    padding: 10px;
+    padding: 1rem;
 }
 
 nav a:hover {
@@ -44,59 +50,71 @@ nav a:hover {
 #subtitulo{
     text-align: center;
 }
+
 .menu-de-imagenes{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 3em;
 }
 
 .menu-de-imagenes img {
-    max-height: 400px;
+    max-height: 300px;
     height: 30em;
+    box-shadow: .2em .5em 2em rgba(0, 0, 0, .2);
 }
 
-.menu-de-imagenes div p{
+.menu-de-imagenes div h4{
     text-align: center;
     font-weight: 600;
     font-size: larger;
 }
 
+
 .grilla {
     display: grid;
-    grid-template-columns: 350px 1fr;
+    grid-template-columns: 15rem 1fr;
     grid-column-gap: 2em;
 }
 
 .submenu {
     max-height: 70px;
-    height: 25em;
+    height: 10em;
     display: flex;
     flex-direction: column;
-    margin-left: 7em;
+    margin-left: 5em;
     color: black;
 }
 
 #categorias li{
     font-weight: 900;
     border-bottom: solid 1px black;
-    
 }
 
 .submenu li{
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 1.2rem;
 }
 .productos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 40px;
+    grid-template-rows: 1fr 1fr ;
+    grid-column-gap: 1.4rem;
+    grid-row-gap: 2rem;
 }
-
-.productos img {
-    height: 15em;
+.contenedor-de-imagenes {
+    height: 16em;
+    width: 12em;
+    max-width: 500px;
+    max-height: 600px;
+}
+.contenedor-de-imagenes img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: .2em .5em 2em rgba(0, 0, 0, .2);
 }
 .productos-tienda {
     display: flex;
@@ -110,8 +128,11 @@ nav a:hover {
 }
 footer{
     display: grid;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 1fr 14rem;
     background-color:lightsalmon;
+    width: 100%;
+    position: fixed;
+    bottom:0;
 }
 .redes-sociales img{
     height: 45px;
@@ -150,26 +171,25 @@ footer{
     margin-bottom: 20px;
     margin-right: 16px;
     font-size: 17px;
-
 }
 
 .nosotros-lorem {
     width: 65%;
     margin: auto;
     display: block;
-    ;
 }
 
 .grilla-contacto { 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2em;
-    
 }
+
 .contactanos{
     width: 30em;
     margin-left: 10%;
 }
+
 .contactanos div {
     margin: 5em 5em;
 }
@@ -177,7 +197,6 @@ footer{
 .formulario {
     margin-top: 5em;
     margin-right: 10%;
-
 }
 .formulario input{
     display: flex;
@@ -189,7 +208,6 @@ footer{
 .formulario .casilla {
     margin: 1em 0 20px ;
 }
-
 
 .formulario textarea{
     display: flex;
@@ -205,5 +223,4 @@ footer{
     -webkit-border-radius: 5px;
     border-radius: 5px; 
     margin-bottom: 10em;
-    
 }
